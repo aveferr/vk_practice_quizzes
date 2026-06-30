@@ -1,0 +1,31 @@
+.join-page {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary);
+}
+
+.join-card {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  padding: 36px 40px;
+  text-align: center;
+}
+
+.join-card h1 {
+  margin: 0 0 6px;
+  color: var(--primary);
+}
+
+.join-input {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  margin: 20px 0 12px;
+}
+
+.join-submit {
+  width: 100%;
+}

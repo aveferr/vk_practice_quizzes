@@ -1,0 +1,57 @@
+:root {
+  --primary: #9b59c0;
+  --primary-hover: #8a47b0;
+  --primary-tint: #f4e9fb;
+  --primary-tint-border: #d9b8ec;
+  --primary-text-on-tint: #6b2e91;
+
+  --success: #16a34a;
+  --success-tint: #dcfce7;
+  --danger: #dc2626;
+  --danger-tint: #fee2e2;
+  --info: #2563eb;
+  --info-tint: #dbeafe;
+  --warning: #b45309;
+  --warning-tint: #fef3c7;
+
+  --text-primary: #111827;
+  --text-secondary: #6b7280;
+  --text-tertiary: #9ca3af;
+
+  --border: #e5e7eb;
+  --bg-page: #f8f9fb;
+  --bg-surface: #ffffff;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  font-family: 'Segoe UI', -apple-system, Roboto, Arial, sans-serif;
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: var(--bg-page);
+  color: var(--text-primary);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input, select, textarea {
+  font-family: inherit;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}

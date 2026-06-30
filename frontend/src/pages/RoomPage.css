@@ -1,0 +1,421 @@
+.room-center {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.room-error {
+  color: var(--danger);
+}
+
+/* Лобби */
+.room-lobby {
+  min-height: 100vh;
+  padding: 32px 48px;
+}
+
+.room-lobby-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.room-lobby-subtitle {
+  color: var(--text-secondary);
+  font-size: 13px;
+  margin: 0;
+}
+
+.room-live-badge {
+  background: var(--success-tint);
+  color: var(--success);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 999px;
+}
+
+.room-lobby-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.room-code-card,
+.room-participants-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+}
+
+.room-code-label {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.room-code {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: var(--primary);
+  margin: 8px 0;
+}
+
+.room-code-hint {
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.room-participants-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.room-participants-header h3 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.room-participants-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 16px;
+  min-height: 40px;
+}
+
+.room-participant-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-page);
+  border-radius: var(--radius-md);
+  padding: 8px 10px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.room-participant-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--primary-tint);
+  color: var(--primary-text-on-tint);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.room-start-btn {
+  width: 100%;
+}
+
+/* Вопрос */
+.room-question {
+  min-height: 100vh;
+  padding: 28px 48px;
+  background: var(--bg-page);
+}
+
+.room-question.host {
+  background: #2b1338;
+  color: #fff;
+}
+
+.room-question-top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.room-question.host .room-question-top {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.room-question-tag {
+  background: var(--primary-tint);
+  color: var(--primary-text-on-tint);
+  padding: 3px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+.room-timer {
+  width: 80px;
+  height: 80px;
+  border: 3px solid var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 0 auto 24px;
+}
+
+.room-question-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  max-width: 700px;
+  margin: 0 auto 24px;
+}
+
+.room-question:not(.host) .room-question-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+}
+
+.room-question-image {
+  display: block;
+  max-width: 100%;
+  margin: 16px auto 0;
+  border-radius: var(--radius-md);
+}
+
+.room-question-image {
+  display: block;
+  max-width: 100%;
+  max-height: 280px;
+  object-fit: contain;
+  border-radius: var(--radius-md);
+  margin: 12px auto 0;
+}
+
+.room-options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.room-option {
+  border: 2px solid transparent;
+  border-radius: var(--radius-md);
+  padding: 22px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+}
+
+.room-option:disabled {
+  cursor: default;
+}
+
+.room-option.selected {
+  border-color: currentColor;
+}
+
+/* цвета плиток определены в common.css */
+
+.room-submit-btn,
+.room-next-btn,
+.room-return-btn {
+  display: block;
+  margin: 24px auto 0;
+}
+
+.room-submitted-card {
+  max-width: 320px;
+  margin: 24px auto 0;
+  background: var(--primary-tint);
+  color: var(--primary-text-on-tint);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  text-align: center;
+}
+
+.room-submitted-check {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+  font-size: 18px;
+}
+
+.room-submitted-card p {
+  margin: 4px 0 0;
+  font-size: 13px;
+}
+
+.room-host-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+/* Результаты вопроса */
+.room-result {
+  min-height: 100vh;
+  padding: 32px 48px;
+  text-align: center;
+}
+
+.room-result h2 {
+  margin: 0 0 4px;
+}
+
+.room-result-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  max-width: 800px;
+  margin: 32px auto 0;
+  text-align: left;
+}
+
+.room-result-option {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.room-result-option.correct {
+  background: var(--success-tint);
+  border-color: var(--success);
+  color: var(--success);
+}
+
+.room-result-option.wrong {
+  background: var(--danger-tint);
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+.room-result-side {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.room-score-card,
+.room-top3-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 18px;
+  text-align: center;
+}
+
+.room-score-value {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--primary);
+  margin: 4px 0;
+}
+
+.room-top3-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--bg-page);
+}
+
+/* Финал */
+.room-finished {
+  min-height: 100vh;
+  padding: 32px 48px;
+  text-align: center;
+}
+
+.room-finished-body {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 32px;
+  max-width: 800px;
+  margin: 24px auto;
+  text-align: left;
+}
+
+.room-podium {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.room-podium-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.room-podium-card.first {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+}
+
+.room-podium-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--primary-tint);
+  color: var(--primary-text-on-tint);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.room-podium-card.first .room-podium-avatar {
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+}
+
+.room-all-participants {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 18px;
+}
+
+.room-participant-row {
+  display: grid;
+  grid-template-columns: 28px 28px 1fr auto;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--bg-page);
+}

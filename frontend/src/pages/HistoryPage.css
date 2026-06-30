@@ -1,0 +1,47 @@
+.history-main {
+  flex: 1;
+  padding: 32px 40px;
+}
+
+.history-main h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.history-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.history-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.history-score {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.history-score strong {
+  font-size: 20px;
+  color: var(--primary);
+}
+
+.history-score span {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.badge-success {
+  background: var(--success-tint);
+  color: var(--success);
+}
